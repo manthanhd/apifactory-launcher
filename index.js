@@ -55,6 +55,8 @@ function DigitalOceanAccess(token) {
 var digitalOcean = new DigitalOceanAccess(token);
 digitalOcean.findAllDroplets(function(data) {
   console.log(data);
+}, function(error, response, data) {
+  console.log(data);
 });
 
 var image = "base_snapshot";
